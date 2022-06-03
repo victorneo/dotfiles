@@ -26,6 +26,7 @@ colorscheme benokai
 set pastetoggle=<F12>
 highlight Pmenu ctermbg=238 gui=bold
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.egg,*.tar.gz,*.tar,*.gz,*.out,*/static/vendor/*,*.min.css,*.min.js,*.css.map,*.jpg,*.png,*.gif
+set ttymouse=sgr
 
 " Shortcuts for moving around splits with ctrl + Arrow
 map <C-Left> <C-W><Left>
