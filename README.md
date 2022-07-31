@@ -3,13 +3,14 @@
 A collection of configuration files that I am using to simplify my setup of:
 
 - tmux
-- vim
+- vim + nvim
+- alacritty
 
 ### Instructions
 
 1. Install `tmux` and `vim` if you have not, eg. `brew install tmux vim`
 2. Clone this repository, preferably to your `~` home directory
-3. Run the `setup.sh` script and it should set up the soft links automatically
+3. Run `sh setup.sh` script and it should set up the soft links automatically
 4. Open `vim`, and run `:PlugInstall` to install the vim plugins
 
 
