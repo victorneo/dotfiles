@@ -7,6 +7,7 @@ Plug 'fatih/vim-go'
 Plug 'guns/vim-clojure-static'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'pangloss/vim-javascript'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
 " General Vim Settings
@@ -21,12 +22,13 @@ set number
 set nowrap
 syntax on
 filetype plugin indent on
-fixdel
-colorscheme benokai
+colorscheme codedark
 set pastetoggle=<F12>
 highlight Pmenu ctermbg=238 gui=bold
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.egg,*.tar.gz,*.tar,*.gz,*.out,*/static/vendor/*,*.min.css,*.min.js,*.css.map,*.jpg,*.png,*.gif
-set ttymouse=sgr
+if !has('nvim')
+        set ttymouse=sgr
+endif
 
 " Shortcuts for moving around splits with ctrl + Arrow
 map <C-Left> <C-W><Left>
@@ -42,6 +44,7 @@ let NERDTreeShowHidden=1
 
 " vim-javascript settings
 let g:javascript_plugin_flow = 1
+let g:airline_theme = 'codedark'
 
 " Auto-enable RainbowParaentheses
 au VimEnter * RainbowParenthesesToggle
