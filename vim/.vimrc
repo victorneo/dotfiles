@@ -4,10 +4,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'nvie/vim-flake8'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
-Plug 'guns/vim-clojure-static'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'tomasiser/vim-code-dark'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " General Vim Settings

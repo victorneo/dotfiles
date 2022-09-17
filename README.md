@@ -13,6 +13,9 @@ A collection of configuration files that I am using to simplify my setup of:
 3. Run `sh setup.sh` script and it should set up the soft links automatically
 4. Open `vim`, and run `:PlugInstall` to install the vim plugins
 
+For Alacritty, install the [Hack font](https://github.com/source-foundry/Hack)
+before proceeding.
+
 
 ### License
 
