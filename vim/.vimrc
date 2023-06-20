@@ -8,6 +8,7 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'tomasiser/vim-code-dark'
 Plug 'rust-lang/rust.vim'
+Plug 'github/copilot.vim'
 call plug#end()
 
 " General Vim Settings
