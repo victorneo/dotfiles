@@ -1,14 +1,14 @@
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
-Plug 'nvie/vim-flake8'
+Plug 'averms/black-nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'tomasiser/vim-code-dark'
 Plug 'rust-lang/rust.vim'
-Plug 'github/copilot.vim'
+Plug 'tell-k/vim-autopep8'
 call plug#end()
 
 " General Vim Settings
@@ -41,9 +41,13 @@ map <C-Down> <C-W><Down>
 map <F2> :NERDTreeToggle<CR>
 map <F3> :Todo<CR>
 map <F4> :RustFmt<CR>
+autocmd FileType python noremap <buffer> <F7> :call Autopep8()<CR>
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\.out$', '\.git$', '\.class$', '.DS_Store', '\.swp$', '^.pytest_cache$']
 let NERDTreeShowHidden=1
 let NERDTreeMinimalMenu=1
+
+" black settings
+let g:black_use_virtualenv = 0
 
 " vim-javascript settings
 let g:javascript_plugin_flow = 1
