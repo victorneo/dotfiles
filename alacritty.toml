@@ -1,0 +1,19 @@
+[bell]
+duration = 0
+
+[font]
+size = 14
+
+[font.normal]
+family = "Hack"
+
+[shell]
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/bin/zsh"
+
+[window]
+startup_mode = "Maximized"
+
+[window.dimensions]
+columns = 225
+lines = 67
