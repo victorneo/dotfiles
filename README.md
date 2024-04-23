@@ -4,15 +4,15 @@ A collection of configuration files that I am using to simplify my setup of:
 
 - brew bundle
 - tmux
-- vim + nvim
+- nvim
 - alacritty
 
 ### Instructions
 
-1. Install `tmux` and `vim` if you have not, eg. `brew bundle`
+1. Install `tmux` and `nvim` if you have not, eg. `brew bundle`
 2. Clone this repository, preferably to your `~` home directory
 3. Run `sh setup.sh` script and it should set up the soft links automatically
-4. Open `vim`, and run `:PlugInstall` to install the vim plugins
+4. Open `nvim`
 
 For Alacritty, install the [Hack font](https://github.com/source-foundry/Hack)
 before proceeding.
@@ -20,7 +20,7 @@ before proceeding.
 
 ### License
 
-Copyright 2023 Victor Neo
+Copyright 2024 Victor Neo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

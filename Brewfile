@@ -1,3 +1,3 @@
-brew "python@3.11"
+brew "python@3.12"
 brew "neovim"
 brew "tmux"
