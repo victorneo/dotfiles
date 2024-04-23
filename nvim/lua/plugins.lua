@@ -13,9 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     'neovim/nvim-lspconfig',
-    'preservim/nerdtree',
+    'nvim-tree/nvim-tree.lua',
+    'nvim-tree/nvim-web-devicons',
+    'Exafunction/codeium.vim',
     'vim-airline/vim-airline',
-    'averms/black-nvim',
     'ctrlpvim/ctrlp.vim',
     'fatih/vim-go',
     'kien/rainbow_parentheses.vim',

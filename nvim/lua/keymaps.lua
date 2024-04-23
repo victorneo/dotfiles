@@ -14,5 +14,5 @@ vim.keymap.set('n', '<C-Right>', '<C-W><Right>', opts)
 vim.keymap.set('n', '<C-Up>', '<C-W><Up>', opts)
 vim.keymap.set('n', '<C-Down>', '<C-W><Down>', opts)
 
-vim.keymap.set('n', '<F2>', ':NERDTreeToggle<CR>', opts)
+vim.keymap.set('n', '<F2>', ':NvimTreeOpen<CR>', opts)
 

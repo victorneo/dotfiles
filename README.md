@@ -14,8 +14,9 @@ A collection of configuration files that I am using to simplify my setup of:
 3. Run `sh setup.sh` script and it should set up the soft links automatically
 4. Open `nvim`
 
-For Alacritty, install the [Hack font](https://github.com/source-foundry/Hack)
-before proceeding.
+If using Alacritty, install the [Hack font](https://github.com/source-foundry/Hack)
+and the [patched Hack Font](https://www.nerdfonts.com/font-downloads) before
+proceeding.
 
 
 ### License
