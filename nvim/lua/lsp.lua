@@ -58,6 +58,70 @@ if not configs.ruff_lsp then
     }
   }
 end
+
+require('lspconfig').pyright.setup {
+  settings = {
+    pyright = {
+      -- Using Ruff's import organizer
+      disableOrganizeImports = true,
+    },
+    python = {
+      analysis = {
+      },
+    },
+  },
+}
+
 require('lspconfig').ruff_lsp.setup {
   on_attach = on_attach,
 }
+
+
+
+local cmp = require'cmp'
+
+cmp.setup({
+    snippet = {
+      -- REQUIRED - you must specify a snippet engine
+      expand = function(args)
+        vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+      end,
+    },
+    window = {
+      completion = cmp.config.window.bordered(),
+      -- documentation = cmp.config.window.bordered(),
+    },
+    mapping = cmp.mapping.preset.insert({
+      ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+      ['<C-f>'] = cmp.mapping.scroll_docs(4),
+      ['<C-Space>'] = cmp.mapping.complete(),
+      ['<C-e>'] = cmp.mapping.abort(),
+      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    }),
+    sources = cmp.config.sources({
+      { name = 'nvim_lsp' },
+      { name = 'vsnip' }, -- For vsnip users.
+      -- { name = 'luasnip' }, -- For luasnip users.
+      -- { name = 'ultisnips' }, -- For ultisnips users.
+      -- { name = 'snippy' }, -- For snippy users.
+    }, {
+      { name = 'buffer' },
+    })
+})
+
+
+
+require'nvim-treesitter.configs'.setup {
+  -- A list of parser names, or "all" (the five listed parsers should always be installed)
+  ensure_installed = { "html", "css", "htmldjango", "lua", "vimdoc" },
+}
+
+require'lspconfig'.tailwindcss.setup{}
+require("tailwind-tools").setup({
+    document_color = {
+        enabled = true, -- can be toggled by commands
+        kind = "inline", -- "inline" | "foreground" | "background"
+        inline_symbol = "󰝤 ", -- only used in inline mode
+        debounce = 200, -- in milliseconds, only applied in insert mode
+  },
+})

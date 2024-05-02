@@ -10,9 +10,9 @@ vim.opt.splitbelow = true           -- open new vertical split bottom
 vim.opt.splitright = true
 vim.opt.termguicolors = true
 
-vim.g.NERDTreeIgnore = {'*.pyc', '__pycache__', '.git', '.pytest_cache', '.vscode'}
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.wo.wrap = false
+
+vim.g.ctrlp_open_new_file = 'v'
 
 local function nvim_tree_attach(bufnr)
     local api = require "nvim-tree.api"

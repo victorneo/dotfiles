@@ -21,4 +21,12 @@ require("lazy").setup({
     'fatih/vim-go',
     'kien/rainbow_parentheses.vim',
     'Mofiqul/vscode.nvim',
+    'nvim-treesitter/nvim-treesitter',
+    'hrsh7th/vim-vsnip',
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/nvim-cmp',
+    'luckasRanarison/tailwind-tools.nvim',
 })
