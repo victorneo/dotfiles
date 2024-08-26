@@ -106,7 +106,10 @@ cmp.setup({
       -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
-    })
+    }),
+    performance = {
+        trigger_debounce_time = 750
+    }
 })
 
 

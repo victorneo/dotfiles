@@ -9,10 +9,25 @@ vim.opt.number = true               -- show absolute number
 vim.opt.splitbelow = true           -- open new vertical split bottom
 vim.opt.splitright = true
 vim.opt.termguicolors = true
+vim.opt.termsync = false
+
+vim.opt.updatetime = 1000
 
 vim.wo.wrap = false
 
 vim.g.ctrlp_open_new_file = 'v'
+
+
+-- Remove trailing spaces
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+    pattern = {"*"},
+    callback = function(ev)
+        save_cursor = vim.fn.getpos(".")
+        vim.cmd([[%s/\s\+$//e]])
+        vim.fn.setpos(".", save_cursor)
+    end,
+})
+
 
 local function nvim_tree_attach(bufnr)
     local api = require "nvim-tree.api"
@@ -47,4 +62,12 @@ require("nvim-tree").setup({
     },
   },
   on_attach = nvim_tree_attach,
+})
+
+require('nvim-treesitter.configs').setup({
+  matchup = {
+    enable = true,              -- mandatory, false will disable the whole extension
+    disable = { "c", "ruby", "python"},  -- optional, list of language that will be disabled
+    -- [options]
+  },
 })

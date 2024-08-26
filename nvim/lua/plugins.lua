@@ -29,4 +29,5 @@ require("lazy").setup({
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
     'luckasRanarison/tailwind-tools.nvim',
+    'andymass/vim-matchup',
 })
