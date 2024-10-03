@@ -15,3 +15,6 @@ git config --global alias.mnff "merge --no-ff"
 git config --global alias.co "checkout"
 git config --global alias.po "push origin"
 git config --global alias.po "push origin"
+git config --global alias.bd "branch -D"
+
+alias g='git'
