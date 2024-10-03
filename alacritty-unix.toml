@@ -2,15 +2,14 @@
 duration = 0
 
 [font]
-size = 12
+size = 11
 
 [font.normal]
 family = "Hack Nerd Font"
 
 [shell]
-args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
 [window.dimensions]
-columns = 225
-lines = 67
+columns = 187
+lines = 76
