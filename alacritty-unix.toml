@@ -7,7 +7,7 @@ size = 11
 [font.normal]
 family = "Hack Nerd Font"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window.dimensions]
