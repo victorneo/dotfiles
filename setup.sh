@@ -6,6 +6,7 @@ cd ~ && ln -s ${currdir}/tmux.conf .tmux.conf
 
 cd ~ && mkdir -p .config
 cd ~ && ln -s ${currdir}/nvim .config/nvim
+cd ~ && ln -s ${currdir}/helix .config/helix
 cd ~ && mkdir -p ~/.config/zed
 cd ~ && ln -s ${currdir}/zed/settings.json .config/zed/settings.json
 

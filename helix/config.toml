@@ -1,0 +1,8 @@
+theme = "kanagawa"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+"{" = [ "move_visual_line_up", "goto_prev_paragraph", "trim_selections" ]
+"}" = [ "move_visual_line_down", "goto_next_paragraph", "trim_selections" ]
