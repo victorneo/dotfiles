@@ -15,7 +15,6 @@ require("lazy").setup({
     'neovim/nvim-lspconfig',
     'nvim-tree/nvim-tree.lua',
     'nvim-tree/nvim-web-devicons',
-    'Exafunction/codeium.vim',
     'vim-airline/vim-airline',
     'ctrlpvim/ctrlp.vim',
     'fatih/vim-go',
